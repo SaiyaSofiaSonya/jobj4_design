@@ -37,7 +37,11 @@ class MatrixItTest {
     @Test
     void whenRowHasDiffSize() {
         int[][] in = {
-                {1}, {2, 3}, {}, {}, {4}
+                {1},
+                {2, 3},
+                {},
+                {},
+                {4}
         };
         MatrixIt it = new MatrixIt(in);
         assertThat(it.next()).isEqualTo(1);
